@@ -145,7 +145,7 @@ def median_filter_smoothing(mask):
     return cv2.medianBlur(mask, ksize=5)
 
 def main():
-    model_path = "finalSLZsegment.tflite"
+    model_path = "model.tflite"
     model = TFLiteModel(model_path)
 
     cap = cv2.VideoCapture(0)
